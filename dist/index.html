@@ -4,10 +4,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>confcode_bart</title>
+  <title>confcode_speakers-page</title>
   <link rel="stylesheet" href="./style/style.min.css">
 </head>
-<body>
+<body class="">
+  <header class="header">
+    <nav class="header_nav">
+      <img class="header_nav__logo" src="../dist/image/logo/logo2023.svg" alt="logo de condeconf 2023">
+      <ul>
+        <li><a href="" class="header_nav__link">Event</a></li>
+        <li><a href="" class="header_nav__link">Schedule</a></li>
+        <li><a href="" class="header_nav__link">Speakers</a></li>
+        <li><a href="" class="header_nav__link">Team</a></li>
+        <li><a href="" class="header_nav__link">Contact</a></li>
+        <li>
+          <form class="header_nav__search" action="search">
+            <input type="text">
+            <button>search</button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="teaser_speaker">
+      <img class="teaser_speaker__picture" src="../dist/image/speaker/presents@3x.png" alt="photo d'acceuil">
+      <h1 class="teaser_speaker__main-title">Speaker Edition 2023</h1>
+      <p class="teaser_speaker__description">Discover the speakers and the topics or suggest your own topic for our next event</p>
+    </div>
 
+      <h2>event's speakers</h2>
+     
+      <section class="speaker">
+        <section class="cardface">
+          <img class="cardface__picture" src="../dist/image/speaker/chris@3x.jpg" alt="photo de Chris Coyer">
+          <h3 class="cardface__name">Chris Coyer</h3>
+          <h4 class="cardface__region">milwaukee, WI</h4>
+        </section>
+        <section class="cardoff">
+          <h3 class="cardoff__name">Chris Coyer</h3>
+          <h4 class="cardoff__topic">The All-Powerful Front-End Developer</h4>
+          <p class="cardoff__description">Without servers, we'd have no way to share our creations with the world</p>
+          <div class="cardoff__info">
+            <time class="cardoff__time">9:30 AM</time>
+            <span class="cardoff__room">R1</span>
+            <a href="" class="cardoff__link">About</a>
+          </div>
+
+
+        </section>
+      </section>
+    </div>
+  </main>
 </body>
 </html>
