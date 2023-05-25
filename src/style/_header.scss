@@ -1,16 +1,16 @@
 nav {
-  background: purple;
+  background: #727272;
 
   img {
     width: 100%;
-    margine-inline-end: auto;
+    margin-inline-end: 12rem;
 
   }
   ul {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 2rem;
-
 
     a,li {
       text-decoration: none;

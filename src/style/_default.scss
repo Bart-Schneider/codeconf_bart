@@ -5,10 +5,28 @@ main {
 .teaser_speaker {
   display: flex;
   align-items: center;
-  margin: 12rem;
+  margin: 0 auto;
 
   &:__text {
     display: flex;
   }
 }
 
+.cardface {
+  border: 1px solid #727272;
+  max-width: 15rem;
+  padding: 1rem;
+  margin: 1rem;
+
+  img {
+    max-width: 15rem ;
+  }
+
+}
+
+.cardoff {
+  max-width: 15rem;
+  background: #272727;
+  color: #fff;
+  
+}

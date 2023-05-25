@@ -5,10 +5,26 @@ main {
 .teaser_speaker {
   display: flex;
   align-items: center;
-  margin: 12rem;
+  margin: 0 auto;
 }
 .teaser_speaker:__text {
   display: flex;
+}
+
+.cardface {
+  border: 1px solid #727272;
+  max-width: 15rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.cardface img {
+  max-width: 15rem;
+}
+
+.cardoff {
+  max-width: 15rem;
+  background: #272727;
+  color: #fff;
 }
 
 /*coucou toto */
@@ -355,15 +371,16 @@ template {
   font-weight: 700;
 }
 nav {
-  background: purple;
+  background: #727272;
 }
 nav img {
   width: 100%;
-  margine-inline-end: auto;
+  margin-inline-end: 12rem;
 }
 nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 nav ul a, nav ul li {
