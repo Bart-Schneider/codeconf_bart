@@ -3,9 +3,17 @@ main {
 }
 
 .teaser_speaker {
+  max-width: 50rem;
   display: flex;
   align-items: center;
   margin: 0 auto;
+
+  img {
+    position: relative;
+    z-index: 2;
+    margin-block-start: -10;
+    border: 1px solid red;
+  }
 
   &:__text {
     display: flex;
@@ -19,14 +27,31 @@ main {
   margin: 1rem;
 
   img {
-    max-width: 15rem ;
+    max-width: 15rem;
   }
 
+  &:active {
+    display: none;
+
+    .cardoff {
+      display: contents;
+    }
+  }
 }
 
 .cardoff {
   max-width: 15rem;
   background: #272727;
   color: #fff;
-  
+  padding: 1rem;
+  margin: 1rem;
+  display: none;
+
+  a {
+    border: 1px solid #fff;
+    padding: 0.5rem;
+  }
 }
+
+
+.form_speaker
