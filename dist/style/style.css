@@ -1,3 +1,7 @@
+body {
+  font-family: LeagueSpartan;
+}
+
 main {
   background: #cfcfcf;
 }
@@ -45,6 +49,10 @@ main {
 .cardoff a {
   border: 1px solid #fff;
   padding: 0.5rem;
+}
+
+.form_speaker_presentation {
+  border: 1px solid #272727;
 }
 
 /*coucou toto */
