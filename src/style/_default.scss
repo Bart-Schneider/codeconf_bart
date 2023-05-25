@@ -1,3 +1,14 @@
 main {
-  background: #1fa3b4;
+  background: #cfcfcf;
 }
+
+.teaser_speaker {
+  display: flex;
+  align-items: center;
+  margin: 12rem;
+
+  &:__text {
+    display: flex;
+  }
+}
+

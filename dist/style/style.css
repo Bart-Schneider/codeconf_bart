@@ -1,9 +1,14 @@
 main {
-  background: #1fa3b4;
+  background: #cfcfcf;
 }
 
-body {
-  color: red;
+.teaser_speaker {
+  display: flex;
+  align-items: center;
+  margin: 12rem;
+}
+.teaser_speaker:__text {
+  display: flex;
 }
 
 /*coucou toto */
@@ -350,19 +355,18 @@ template {
   font-weight: 700;
 }
 nav {
-  background: red;
+  background: purple;
 }
 nav img {
-  width: 10%;
-  height: 10%;
+  width: 100%;
+  margine-inline-end: auto;
 }
 nav ul {
   list-style: none;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  gap: 2rem;
 }
-nav ul a {
+nav ul a, nav ul li {
   text-decoration: none;
   font-family: LeagueSpartan;
   color: #fff;

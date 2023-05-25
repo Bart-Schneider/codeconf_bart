@@ -1,17 +1,18 @@
 nav {
-  background: red;
+  background: purple;
 
   img {
-    width: 10%;
-    height: 10%;
+    width: 100%;
+    margine-inline-end: auto;
+
   }
   ul {
     list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 2rem;
 
-    a {
+
+    a,li {
       text-decoration: none;
       font-family: LeagueSpartan;
       color: #fff;
