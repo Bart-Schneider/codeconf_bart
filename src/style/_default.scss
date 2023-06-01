@@ -36,11 +36,10 @@ main {
 
   &:active {
     display: none;
-
     .cardoff {
-      display: contents;
+      display: block;
     }
-  }
+  } 
 }
 
 .cardoff {

@@ -35,7 +35,7 @@ main {
   display: none;
 }
 .cardface:active .cardoff {
-  display: contents;
+  display: block;
 }
 
 .cardoff {
