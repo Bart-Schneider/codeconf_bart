@@ -1,9 +1,5 @@
 
 
-.nav-pipe::after {
-  content: "|";
-  margin-left: 2rem;
-}
 
 
 nav {
@@ -11,22 +7,26 @@ nav {
   position: relative;
   z-index: 1;
   padding: 2rem;
-
+  
   img {
     width: 100%;
-
+    
   }
   ul {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 2rem;
-
+    
     a,li {
       text-decoration: none;
       font-family: LeagueSpartan;
       color: $primary;
       font-size: 1.3rem;
+      
+      &:hover {
+        color : $secondary;
+      }
     }
   }
 }
@@ -36,19 +36,28 @@ nav {
 }
 
 .header_nav__search {
-  display: none;
-
   &:before {
     content: "\e940";
     font-family: "icon";
     font-weight: normal;
     color: $primary;
+    
   }
 }
 
 .nav__schedule::before {
   content: "\e93f";
+  margin: .5rem;
   font-family: "icon";
   font-weight: normal;
+  color: $primary;
+}
+
+.nav-pipe::after {
+  content: "|";
+  margin-left: 2rem;
+}
+
+.nav-pipe:hover {
   color: $primary;
 }

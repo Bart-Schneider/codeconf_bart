@@ -1,4 +1,5 @@
 $primary: #784CF1;
+$secondary: #FF3700;
 $white: #F8F8F8;
 $black: #343237;
 
@@ -33,4 +34,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &__title {
+    color: $primary;
+    font-size: 5rem;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+  }
 }
