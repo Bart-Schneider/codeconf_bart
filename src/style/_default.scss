@@ -15,12 +15,12 @@ body {
   align-items: center;
   margin: 0 auto;
   background: $primary;
+  color: $white;
 
   img {
     position: relative;
     z-index: 2;
-    margin-block-start: -10;
-    border: 1px solid red;
+    margin-top: -40;
   }
 
   &:__text {
@@ -29,9 +29,8 @@ body {
 }
 
 
-
-
-.form_speaker_presentation {
-  border: 1px solid #272727;
-  
+.form_speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -23,11 +23,11 @@ Bonne soirée ! -->
     <nav class="header_nav">
       <ul>
         <li class="header_nav__logo"><img  src="../dist/image/logo/logo2023.svg" alt="logo de condeconf 2023"></li>
-        <li class="header_nav__link"><a href="#" >Event</a></li>
-        <li class="header_nav__link"><a href="#" >Schedule</a></li>
-        <li class="header_nav__link"><a href="#" >Speakers</a></li>
-        <li class="header_nav__link"><a href="#" >Team</a></li>
-        <li class="header_nav__link"><a href="#" >Contact</a></li>
+        <li class="header_nav__link nav-pipe"><a href="#" >Event</a></li>
+        <li class="header_nav__link nav-pipe"><a href="#" >Speakers</a></li>
+        <li class="header_nav__link nav-pipe"><a href="#" >Team</a></li>
+        <li class="header_nav__link nav-pipe"><a href="#" >Contact</a></li>
+        <li class="header_nav__link nav__schedule"><a href="#" >Schedule</a></li>
         <li class="header_nav__search">Search</li>
       </ul>
     </nav>
@@ -267,28 +267,34 @@ Bonne soirée ! -->
         </section>
       </section>
     </div>
-    <div class="form_speaker_presentation">
+    <div class="form_speaker">
       <h2 class="form_speaker__title">Become speaker</h2>
       <h3 class="form_speaker__subtitle">Do you have a topic you like ?</h3>
       <p class="form_speaker__description">Do you have a topic that you like?
         Submit it for the next event by filling out the form below. Do not forget to specify the subject and the related keywords.</p>
 
-        <form action="" class="form_speaker">
-          <label for="name">Name</label>
-          <input type="text" id="name">
+        <form action="" class="form_speaker__form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email">
+          </div>
           
-          <label for="email">Email</label>
-          <input type="email" id="email">
+          <div>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject">
+            
+            <label for="keyword">Keyword</label>
+            <input type="text" id="keyword">
+          </div>
           
-          <label for="subject">Subject</label>
-          <input type="text" id="subject">
-          
-          <label for="keyword">Keyword</label>
-          <input type="text" id="keyword">
-          
-          <label for="shortdetails">Short details</label>
-          <input type="text" id="shortdetails">
-          
+          <div>
+            <label for="shortdetails">Short details</label>
+            <input type="text" id="shortdetails">
+            
+          </div>
           <button>Submit your subject</button>
         </form>
         

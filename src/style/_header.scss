@@ -1,20 +1,19 @@
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
 
 
-}  
+.nav-pipe::after {
+  content: "|";
+  margin-left: 2rem;
+}
+
 
 nav {
   background: $white;
   position: relative;
   z-index: 1;
+  padding: 2rem;
 
   img {
     width: 100%;
-    margin: auto;
 
   }
   ul {
@@ -27,6 +26,29 @@ nav {
       text-decoration: none;
       font-family: LeagueSpartan;
       color: $primary;
+      font-size: 1.3rem;
     }
   }
+}
+
+.header_nav__logo {
+  margin-right: auto;
+}
+
+.header_nav__search {
+  display: none;
+
+  &:before {
+    content: "\e940";
+    font-family: "icon";
+    font-weight: normal;
+    color: $primary;
+  }
+}
+
+.nav__schedule::before {
+  content: "\e93f";
+  font-family: "icon";
+  font-weight: normal;
+  color: $primary;
 }
