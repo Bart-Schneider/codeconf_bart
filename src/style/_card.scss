@@ -1,0 +1,65 @@
+$face: #727272;
+$off: #000;
+$white: #fff;
+
+
+.cardface {
+  background: $face;
+  color: $white;
+  padding: 1rem;
+  max-width: 13rem;
+  height: 20rem;
+  border-radius: .5rem;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  
+}.cardoff {
+  background: $off;
+  color: $white;
+  padding: 1rem;
+  max-width: 13rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  display: none;
+  
+ 
+    &__infos {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: .2rem;
+    }
+  
+    &__link {
+      text-decoration: none;
+      color: $white;
+      border: 1px solid; 
+      padding: 0.2rem;
+      margin-left: auto;
+    }
+}
+
+
+.cardface:active {
+  display: none;
+}
+
+.cardface:active ~ .cardoff {
+  display: block;
+}
+
+
+.all-speaker {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px;
+  max-width: 60 rem;
+
+}
+
+
