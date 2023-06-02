@@ -1,21 +1,18 @@
 $face: #727272;
 $off: #000;
-$white: #fff;
 
 
 .cardface {
-  background: $face;
-  color: $white;
+  color: $primary;
   padding: 1rem;
   max-width: 13rem;
   height: 20rem;
-  border-radius: .5rem;
   display: flex;
   align-content: center;
   flex-direction: column;
   
 }.cardoff {
-  background: $off;
+  background: $primary;
   color: $white;
   padding: 1rem;
   max-width: 13rem;
@@ -55,11 +52,37 @@ $white: #fff;
 
 .all-speaker {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: repeat(4, 1fr);
-  grid-gap: 20px;
-  max-width: 60 rem;
+  gap: 20px;
+  max-width: 60rem;
 
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+
+
+@media (max-width: 1200px) {
+  .all-speaker {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .all-speaker {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .all-speaker {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
